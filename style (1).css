@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 5px 0 10px 0;  
+}
+
+body {
+  background-color: lightblue;
+  border: 2px solid red;
+  padding: 10px;
+  border-radius: 5px;
+}
+  
+#ex_box-shadow {
+  border: 1px solid;
+  padding: 1px;
+  box-shadow: 5px 10px #888888;
+  border-radius: 5px;
+}    
+
+#ex_solid-border {
+  border-style: solid;
+  border-width: medium;
+  border-radius: 10px;
+} 
+  
+h1.ex {                        /* This is a class attribute for HEADER1 */
+  color: navy;
+  margin-left: 10px;
+}
+
+#myCenter {                    /* This is an id attribute for CENTER TEXT */
+  text-align: center;
+}
+
+label {                        /* This is a FLEXBOX example */
+  display: flex;
+  align-items: baseline;       /* Baseline centering */
+}
+
+input[type=radio] {
+  flex: none;
+  margin-right: 8px;
+}
+
+form {
+  max-width: 20em;
+}
+
+@media only screen and (max-width:1920px) {
+  /* For flatscreens: */ 
+  body {
+   width: 100%;
+   margin:0 auto;
+  }
+}
+
+@media only screen and (max-width:1024px) {
+  /* For laptops: */
+  .main {
+    width: 100%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
